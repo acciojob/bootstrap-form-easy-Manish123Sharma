@@ -1,2 +1,9 @@
 
 /* Your CSS Code here. */
+.invalid-feedback {
+	display: none;
+}
+.was-validated .form-control:invalid + .invalid-feedback,
+.was-validated .form-check-input:invalid + .invalid-feedback {
+	display: block;
+}
